@@ -17,6 +17,7 @@ export default function Draggable({ children, className }) {
     setCurrDraggable(null)
     setIsDragging(false);
   }
+
   return (
     <div onDragStart={handleDragStart} onDragEnd={handleDragEnd} ref={draggableRef} draggable className={`${isDragging ? 'opacity-50' : ""} ${className}`}>{children}</div>
   )
